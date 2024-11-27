@@ -10,11 +10,20 @@
     "start": "web-dev-server"
   },
   "dependencies": {
-    "lit": "^3.1.4"
+    "@lion/button": "^0.18.1",
+    "@lion/core": "^0.24.0",
+    "@lion/fieldset": "^0.22.1",
+    "@lion/form": "^0.15.0",
+    "@lion/input": "^0.18.0",
+    "@lion/ui": "^0.8.7",
+    "lit": "^3.2.1"
   },
   "devDependencies": {
     "@custom-elements-manifest/analyzer": "^0.10.3",
-    "@web/dev-server": "^0.4.6"
+    "@open-wc/testing": "^4.0.0",
+    "@web/dev-server": "^0.4.6",
+    "@web/dev-server-legacy": "^2.1.1",
+    "eslint": "^9.15.0"
   },
   "customElements": "custom-elements.json"
 }
