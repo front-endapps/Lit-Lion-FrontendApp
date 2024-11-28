@@ -1,5 +1,8 @@
 import { LitElement, html, css } from 'lit';
 import './components/HeaderComponent';
+import './components/FooterComponent';
+import './components/MainSection';
+
 const logo = new URL('../assets/open-wc-logo.svg', import.meta.url).href;
 
 class LitLionApp extends LitElement {
@@ -19,6 +22,8 @@ class LitLionApp extends LitElement {
   render() {
     return html`
     <header-component></header-component>
+    <main-section></main-section>
+    <footer-component></footer-component>
     `;
   }
 }
