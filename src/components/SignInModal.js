@@ -15,10 +15,12 @@ export class SignInModal extends LitElement {
       background-color: rgba(0, 0, 0, 0.5);
       justify-content: center;
       align-items: center;
-      z-index: 1000;
+      z-index: 5;
     }
     .modal.open {
-      display:block;
+      display: flex;
+      justify-content:center;
+      align-items: center;
     }
     .modal-content {
       background-color: white;
@@ -29,7 +31,7 @@ export class SignInModal extends LitElement {
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     }
     .close {
-        position: absolute;
+      position: absolute;
       top: 15px;
       right: 15px;
       background: none;
@@ -41,6 +43,12 @@ export class SignInModal extends LitElement {
       display: flex;
       flex-direction: column;
       gap: 24px;
+    }
+    .buttons{
+        display:flex;
+        gap:16px;
+        justify-content: center;
+        align-items: center;
     }
   `;
 
@@ -57,7 +65,6 @@ export class SignInModal extends LitElement {
     this.open = false;
   }
 
-
   render() {
     return html`
       <div class="modal ${this.open ? "open" : ""}">
@@ -72,7 +79,10 @@ export class SignInModal extends LitElement {
                 label="Password"
                 type="password"
               ></lion-input>
+              <div class="buttons">
                 <lion-button type="submit">Sign In</lion-button>
+                <lion-button type="submit">Sign Out</lion-button>
+              </div>
             </form>
           </lion-form>
         </div>
@@ -82,4 +92,3 @@ export class SignInModal extends LitElement {
 }
 
 customElements.define("sign-in-modal", SignInModal);
-
