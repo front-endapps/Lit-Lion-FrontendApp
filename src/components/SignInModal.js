@@ -2,6 +2,7 @@ import { LitElement, html, css } from "lit";
 import "../../node_modules/@lion/form/lion-form";
 import "../../node_modules/@lion/input/lion-input";
 import "../../node_modules/@lion/button/lion-button";
+import "../../node_modules/@lion/ui/input-email";
 
 export class SignInModal extends LitElement {
   static styles = css`
@@ -19,7 +20,7 @@ export class SignInModal extends LitElement {
     }
     .modal.open {
       display: flex;
-      justify-content:center;
+      justify-content: center;
       align-items: center;
     }
     .modal-content {
@@ -44,11 +45,11 @@ export class SignInModal extends LitElement {
       flex-direction: column;
       gap: 24px;
     }
-    .buttons{
-        display:flex;
-        gap:16px;
-        justify-content: center;
-        align-items: center;
+    .buttons {
+      display: flex;
+      gap: 16px;
+      justify-content: center;
+      align-items: center;
     }
   `;
 
@@ -74,6 +75,14 @@ export class SignInModal extends LitElement {
           <lion-form>
             <form>
               <lion-input name="username" label="Username"></lion-input>
+              <lion-input
+                label="Email"
+                name="email"
+                type="email"
+                .modelValue=${this.email}
+                @model-value-changed=${(e) =>
+                  (this.email = e.target.modelValue)}
+              ></lion-input>
               <lion-input
                 name="password"
                 label="Password"
