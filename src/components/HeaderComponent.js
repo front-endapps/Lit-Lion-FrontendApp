@@ -1,4 +1,5 @@
 import { LitElement, html, css } from "lit";
+import "./SignInModal.js";
 
 export class HeaderComponent extends LitElement {
   static styles = css`
@@ -36,13 +37,20 @@ export class HeaderComponent extends LitElement {
       }
     }
   `;
-
+  
+  toggleModal() {
+    const modal = this.shadowRoot.querySelector("sign-in-modal");
+    if (modal) {
+      modal.open = true;
+    }
+  }
   render() {
     return html`
       <header>
         <h1 class="logo">ING Bank</h1>
-        <button>Sign In</button>
+        <button @click=${this.toggleModal}>Sign In</button>
       </header>
+      <sign-in-modal></sign-in-modal>
     `;
   }
 }
