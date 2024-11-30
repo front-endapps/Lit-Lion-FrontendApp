@@ -10,13 +10,9 @@ class LitLionApp extends LitElement {
     header: { type: String },
   }
 
-  static styles = css`
-   
-  `;
-
   constructor() {
     super();
-    this.header = 'My app';
+    this.header = 'Lion lit app';
   }
 
   render() {
