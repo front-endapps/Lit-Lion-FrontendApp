@@ -1,19 +1,19 @@
-<p align="center">
-  <img width="200" src="https://open-wc.org/hero.png"></img>
-</p>
 
 
-I created a frontend application using the Lit framework and the web components library from the mentioned repo - Lion.
+I created a frontend application using the Lit framework, the web components library from the mentioned repo - Lion in the open-wc development environment.
 It consists of the following components:
 - component-header
 - main-section
 - footer-component
 
-The header component contains a Sign In button that opens a modal in which there is a form with the user's details: username, email, password, the sign in button and the sign out button.
+The header component contains a Sign In button that opens a modal, there is located a form with the user's details: username, email, password, the sign in button and the sign out button.
 
 The main-section component includes a welcome message centered in the middle of the page.
 
 The footer component is located at the bottom of the page.
+
+To test the functionality, I created the test file with SignInModal.js, I use the @open-wc/testing testing framework. 
+The code contains a series of tests to verify that SignInModal behaves correctly when it's used.
 
 
  
