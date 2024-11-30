@@ -9,7 +9,7 @@
     "analyze": "cem analyze --litelement",
     "start": "web-dev-server",
     "test": "web-test-runner",
-    "build": "esbuild ./index.html --bundle --outdir=docs --loader:.js=jsx"
+    "build": "esbuild index.html --bundle --outdir=docs --loader:.js=jsx"
   },
   "dependencies": {
     "@lion/button": "^0.18.1",
