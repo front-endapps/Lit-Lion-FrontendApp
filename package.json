@@ -9,7 +9,8 @@
     "analyze": "cem analyze --litelement",
     "start": "web-dev-server",
     "test": "web-test-runner",
-    "build": "esbuild index.html --bundle --outdir=docs --loader:.js=jsx"
+    "build": "esbuild index.html --bundle --outdir=docs --loader:.js=jsx",
+    "deploy": "gh-pages -d ./"
   },
   "dependencies": {
     "@lion/button": "^0.18.1",
@@ -30,7 +31,8 @@
     "@web/test-runner-playwright": "^0.11.0",
     "chai": "^5.1.2",
     "esbuild": "^0.24.0",
-    "eslint": "^9.15.0"
+    "eslint": "^9.15.0",
+    "gh-pages": "^6.2.0"
   },
   "customElements": "custom-elements.json"
 }
