@@ -1,0 +1,38 @@
+{
+  "name": "lit-lion-app",
+  "description": "Webcomponent lit-lion-app following open-wc recommendations",
+  "license": "MIT",
+  "author": "lit-lion-app",
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "analyze": "cem analyze --litelement",
+    "start": "web-dev-server",
+    "test": "web-test-runner",
+    "build": "esbuild index.html --bundle --outdir=docs --loader:.js=jsx",
+    "deploy": "gh-pages -d ./"
+  },
+  "dependencies": {
+    "@lion/button": "^0.18.1",
+    "@lion/core": "^0.24.0",
+    "@lion/dialog": "^0.16.1",
+    "@lion/fieldset": "^0.22.1",
+    "@lion/form": "^0.15.0",
+    "@lion/input": "^0.18.0",
+    "@lion/ui": "^0.8.8",
+    "lit": "^3.2.1"
+  },
+  "devDependencies": {
+    "@custom-elements-manifest/analyzer": "^0.10.3",
+    "@open-wc/testing": "^4.0.0",
+    "@web/dev-server": "^0.4.6",
+    "@web/dev-server-legacy": "^2.1.1",
+    "@web/test-runner": "^0.19.0",
+    "@web/test-runner-playwright": "^0.11.0",
+    "chai": "^5.1.2",
+    "esbuild": "^0.24.0",
+    "eslint": "^9.15.0",
+    "gh-pages": "^6.2.0"
+  },
+  "customElements": "custom-elements.json"
+}
