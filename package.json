@@ -29,6 +29,7 @@
     "@web/test-runner-playwright": "^0.11.0",
     "chai": "^5.1.2",
     "esbuild": "^0.24.0",
+    "esbuild-plugin-html": "^1.0.0",
     "eslint": "^9.15.0"
   },
   "customElements": "custom-elements.json"
