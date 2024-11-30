@@ -8,7 +8,8 @@
   "scripts": {
     "analyze": "cem analyze --litelement",
     "start": "web-dev-server",
-    "test": "web-test-runner"
+    "test": "web-test-runner",
+    "build": "esbuild index.html --bundle --outdir=docs --loader:.js=jsx"
   },
   "dependencies": {
     "@lion/button": "^0.18.1",
@@ -29,7 +30,6 @@
     "@web/test-runner-playwright": "^0.11.0",
     "chai": "^5.1.2",
     "esbuild": "^0.24.0",
-    "esbuild-plugin-html": "^1.0.0",
     "eslint": "^9.15.0"
   },
   "customElements": "custom-elements.json"
