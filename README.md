@@ -5,9 +5,9 @@
 
 I created a frontend application using the Lit framework and the web components library from the mentioned repo - Lion.
 It consists of the following components:
-- <component-header></component-header>
-- <main-section></main-section>
-- <footer-component></footer-component>
+- component-header
+- main-section
+- footer-component
 
 The header component contains a Sign In button that opens a modal in which there is a form with the user's details: username, email, password, the sign in button and the sign out button.
 
