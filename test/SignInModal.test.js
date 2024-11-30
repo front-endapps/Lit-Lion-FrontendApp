@@ -7,4 +7,9 @@ describe('SignInModal', () => {
     const modal = el.shadowRoot.querySelector('.modal');
     expect(modal.classList.contains('open')).to.be.false;
   });
+  it('should open when the "open" property is set', async () => {
+    const el = await fixture(html`<sign-in-modal open></sign-in-modal>`);
+    const modal = el.shadowRoot.querySelector('.modal');
+    expect(modal.classList.contains('open')).to.be.true;
+  });
 });
