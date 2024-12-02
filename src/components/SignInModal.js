@@ -1,8 +1,8 @@
 import { LitElement, html, css } from "lit";
-import "../../node_modules/@lion/form/lion-form";
-import "../../node_modules/@lion/input/lion-input";
-import "../../node_modules/@lion/button/lion-button";
-import "../../node_modules/@lion/ui/input-email";
+import "../../node_modules/@lion/form/lion-form.js";
+import "../../node_modules/@lion/input/lion-input.js";
+import "../../node_modules/@lion/button/lion-button.js";
+
 
 export class SignInModal extends LitElement {
   static styles = css`

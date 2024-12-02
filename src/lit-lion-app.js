@@ -1,7 +1,7 @@
 import { LitElement, html, css } from 'lit';
-import './components/HeaderComponent';
-import './components/FooterComponent';
-import './components/MainSection';
+import './components/HeaderComponent.js';
+import './components/FooterComponent.js';
+import './components/MainSection.js';
 
 const logo = new URL('../assets/open-wc-logo.svg', import.meta.url).href;
 

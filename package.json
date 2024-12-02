@@ -7,10 +7,10 @@
   "type": "module",
   "scripts": {
     "analyze": "cem analyze --litelement",
-    "start": "web-dev-server",
     "test": "web-test-runner",
-    "build": "node build.js",
-    "deploy": "gh-pages -d ./"
+    "start": "web-dev-server",
+    "build": "webpack --mode production",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@lion/button": "^0.18.1",
@@ -21,20 +21,31 @@
     "@lion/form-core": "^0.18.3",
     "@lion/input": "^0.18.0",
     "@lion/ui": "^0.8.8",
+    "ajv": "^8.17.1",
+    "ajv-keywords": "^5.1.0",
     "lit": "^3.2.1"
   },
   "devDependencies": {
+    "@babel/core": "^7.26.0",
+    "@babel/preset-env": "^7.26.0",
     "@custom-elements-manifest/analyzer": "^0.10.3",
     "@open-wc/testing": "^4.0.0",
     "@web/dev-server": "^0.4.6",
     "@web/dev-server-legacy": "^2.1.1",
     "@web/test-runner": "^0.19.0",
     "@web/test-runner-playwright": "^0.11.0",
+    "babel-loader": "^9.2.1",
     "chai": "^5.1.2",
+    "copy-webpack-plugin": "^12.0.2",
     "esbuild": "^0.24.0",
     "esbuild-plugin-html": "^1.0.0",
     "eslint": "^9.15.0",
-    "gh-pages": "^6.2.0"
+    "gh-pages": "^6.2.0",
+    "html-loader": "^5.1.0",
+    "html-webpack-plugin": "^5.6.3",
+    "webpack": "^5.96.1",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.1.0"
   },
   "customElements": "custom-elements.json"
 }
