@@ -59,7 +59,10 @@ export class SignInModal extends LitElement {
 
   constructor() {
     super();
-    this.open = false;
+    this.open = false; 
+    this.username = ''; 
+    this.email = ''; 
+    this.password = ''; 
   }
 
   closeModal() {
@@ -74,7 +77,13 @@ export class SignInModal extends LitElement {
           <h2>Sign In</h2>
           <lion-form>
             <form>
-              <lion-input name="username" label="Username"></lion-input>
+              <lion-input
+                name="username"
+                label="Username"
+                .modelValue=${this.username}
+                @model-value-changed=${(e) =>
+                  (this.username = e.target.modelValue)}
+              ></lion-input>
               <lion-input
                 label="Email"
                 name="email"
@@ -87,6 +96,9 @@ export class SignInModal extends LitElement {
                 name="password"
                 label="Password"
                 type="password"
+                .modelValue=${this.password}
+                @model-value-changed=${(e) =>
+                  (this.password = e.target.modelValue)}
               ></lion-input>
               <div class="buttons">
                 <lion-button type="submit">Sign In</lion-button>
