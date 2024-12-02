@@ -8,7 +8,7 @@ export default {
     path: path.resolve('dist'),
     filename: 'bundle.js',
   },
-  mode: 'production', // sau 'development', după caz
+  mode: 'production', 
   module: {
     rules: [
       {
@@ -23,7 +23,7 @@ export default {
       },
       {
         test: /\.html$/,
-        use: ['html-loader'], // html-loader pentru manipularea fișierelor HTML
+        use: ['html-loader'], 
       },
     ],
   },
