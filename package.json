@@ -11,7 +11,7 @@
     "test": "web-test-runner",
     "start": "web-dev-server",
     "build": "webpack --mode production",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist --silent"
   },
   "dependencies": {
     "@lion/button": "^0.18.1",
