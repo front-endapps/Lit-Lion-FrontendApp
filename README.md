@@ -15,6 +15,9 @@ The footer component is located at the bottom of the page.
 To test the functionality, I created the test file with SignInModal.js, I use the @open-wc/testing testing framework. 
 The code contains a series of tests to verify that SignInModal behaves correctly when it's used.
 
+I host the frontend app with Netlify :
+https://flourishing-lebkuchen-e2f9a1.netlify.app/
+
 
  
 ## Open-wc Starter App
