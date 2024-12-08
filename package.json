@@ -10,8 +10,8 @@
     "analyze": "cem analyze --litelement",
     "test": "web-test-runner",
     "start": "web-dev-server",
-    "build": "webpack --mode production",
-    "deploy": "gh-pages -d dist"
+    "build": "esbuild src/lit-lion-app.js --bundle --outdir=dist --minify --sourcemap --format=esm && copy \"index.html\" \"dist\\\" && node copy-files.js"
+
   },
   "dependencies": {
     "@lion/button": "^0.18.1",
@@ -44,6 +44,7 @@
     "gh-pages": "^6.2.0",
     "html-loader": "^5.1.0",
     "html-webpack-plugin": "^5.6.3",
+    "web-dev-server": "^3.0.27",
     "webpack": "^5.96.1",
     "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^5.1.0"
